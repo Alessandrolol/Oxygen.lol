@@ -1,4 +1,4 @@
-﻿using Oxygen.Backend;
+using Oxygen.Backend;
 using Oxygen.UI;
 using Oxygen.Utilities;
 using HarmonyLib;
@@ -60,7 +60,7 @@ namespace Oxygen.UI
             new ButtonInfo { buttonText = "UnTag All [RT][M]",enabled = false, method =() => Tagging.UnTagAll(), toolTip = "UnInfects Everyone!"},
             new ButtonInfo { buttonText = "UnTag Gun [M]", enabled = false, method =() => Tagging.UnTagAura(), toolTip = "UnInfects A Person!"},
             new ButtonInfo { buttonText = "UnTag Aura [M]", enabled = false, method =() => Tagging.UnTagAura(), toolTip = "UnInfects Everyone Around You!"},
-            new ButtonInfo { buttonText = "Mat All [M] [D?]", enabled = false,method =() => GorillaLocomotion.Player.Instance.disableMovement = false, toolTip = "Changes Everyone's Material Very Fast!"},
+            new ButtonInfo { buttonText = "Mat All [M] [D?]", enabled = false,method =() => Tagging.MatAll(), toolTip = "Changes Everyone's Material Very Fast!"},
             new ButtonInfo { buttonText = "Mat Gun [M] [D?]", enabled = false,method =() => GorillaLocomotion.Player.Instance.disableMovement = false, toolTip = "Changes A Person's Material Very Fast!"},
             //Room Mods
             new ButtonInfo { buttonText = "AntiBan[Stump?]", method =() => Saftey.FullAnticban(), enabled = false, toolTip = "Tries To Prevent You From Getting Banned, Teleports you there too!"},
